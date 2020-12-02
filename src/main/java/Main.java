@@ -1,9 +1,9 @@
 import javax.xml.bind.SchemaOutputResolver;
 
 public class Main {
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         Person mom = new PersonBuilder()
-//                .setName("Анна")
+                .setName("Анна")
                 .setSurname("Вольф")
                 .setAge(100)
                 .setAddress("Сидней")
