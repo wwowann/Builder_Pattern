@@ -47,12 +47,10 @@ public class Person {
     }
 
     public String getName() {
-        if (name == null) throw new IllegalStateException("отсутсвуют обязательные поля\n");
         return name;
     }
 
     public String getSurname() {
-        if (surname == null) throw new IllegalStateException("отсутсвуют обязательные поля\n");
         return surname;
     }
 

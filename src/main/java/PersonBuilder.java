@@ -16,7 +16,6 @@ public class PersonBuilder {
 
     PersonBuilder setAge(int age) {
         this.age = age;
-        if (age < 0 || age > 150) throw new IllegalArgumentException("недопустимый возраст\n");
         return this;
     }
 
