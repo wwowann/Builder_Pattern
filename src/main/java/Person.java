@@ -15,6 +15,13 @@ public class Person {
         this.age = age;
 
     }
+    public Person(String name, String surname, int age, String address) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.address = address;
+
+    }
 
     @Override
     public String toString() {
@@ -22,14 +29,7 @@ public class Person {
                 ", адрес: " + address + " ";
     }
 
-    public Person(String name, String surname, int age, String address) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.address = address;
-    }
-
-    public void setName(String name) {
+   public void setName(String name) {
         this.name = name;
     }
 

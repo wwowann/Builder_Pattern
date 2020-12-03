@@ -25,6 +25,10 @@ public class PersonBuilder {
     }
 
     public Person build() {
+        if (this.name == null || this.surName == null) throw new
+                IllegalStateException("отсутствуют обязательные поля");
+        if (this.age < 0 || age > 150) throw
+                new IllegalArgumentException("недопустимый возраст");
         return new Person(name, surName, age, address);
     }
 }
